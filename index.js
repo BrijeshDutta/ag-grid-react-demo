@@ -6,15 +6,18 @@ import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
 const App = () => {
-
-    
   useEffect(() => {
     console.log('use effect called..');
   }, []);
   const rowData = [
-    { make: 'Toyota', model: {
-        make:'Test',maker:'asasa'
-    }, price: 35000 },
+    {
+      make: 'Toyota',
+      model: {
+        make: 'Test',
+        maker: 'asasa'
+      },
+      price: 35000
+    },
     { make: 'Ford', model: 'Mondeo', price: 32000 },
     { make: 'Porsche', model: 'Boxter', price: 72000 }
   ];
